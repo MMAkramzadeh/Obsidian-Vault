@@ -19,5 +19,3 @@ No Screens and other shit. you teach your body that when the time comes, you are
 10mins of full-body movement each day. Sit-ups, Squats and Push-ups. Thats it!
 
 ***Consequences?*** Cold Shower or ice face plunge.
-
-Hello!
