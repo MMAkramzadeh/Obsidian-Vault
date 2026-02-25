@@ -100,4 +100,3 @@ print(userFile)
 >  Google.com
 >  Beta-File
 - in the parentheses of the *removeprefix* and *removesuffix* method, you add the string that you want to remove from the string.
-
