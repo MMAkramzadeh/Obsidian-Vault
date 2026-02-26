@@ -174,6 +174,15 @@ print(list1)
 > ["item1", "item2", "item3"]
 > ["item1", "item2", "item3", "item4"]
 
+- but if you want to add list to another list you can use the *.extend()* Method:
+```Py title="Extending"
+list1 = [1, 2, 3, 4]
+list2 = [5, 6 , 7 , 8]
+extended_list = list1.extend(list2)
+print(extended_list)
+```
+> [1, 2, 3, 4, 5, 6, 7, 8]
+
 - if you want to insert an item in a list, you can use the *.insert* method. All the item after the specified index will be moved 1 to the right.
 ```Py
 list1 = ["item1", "item2", "item3"]
@@ -194,6 +203,14 @@ print(list1)
 > ["item1", "item2", "item3"]
 > ["item1", "item3"]
 
+- or you can just use the *.remove* method for removing your desired item:
+```Py title="Removing an specific item"
+list1 = [1, 2, 3, 4]
+list1.remove(3)
+print(list1)
+```
+> [1, 2, 4]
+
 - but if you dont know its index, you can use *.pop()* to remove the last item from the list:
 ```Py
 list1 = ["item1", "item2", "item3"]
@@ -210,3 +227,143 @@ popedItem = list1.pop() # You can also store it in a variable.
 print(popedItem)
 ```
 > item3
+- You can also slice a part of the list with the slice operator (:):
+```py title="Slicing"
+list1 = ["num1", "num2", "num3", "num4"]
+print(list[1:3])
+```
+> ["num1", "num2"]
+
+- you can also clear a list by *.clear* method:
+```py 
+list1 = [1, 2, 3]
+list1.clear()
+print(list1)
+```
+> [ ]
+
+- for sorting list you can do 2 things:
+```Py title="sorting with .Sort() method"
+list1 = [3, 4, 1, 2]
+list1.sort()
+print(list1)
+```
+> [1, 2, 3, 4]
+
+```Py title="sorting with sorted() function"
+list1 = [3, 4, 2, 1]
+sorted_list = sorted(list1)
+print(list1)
+print(sorted_list)
+```
+> [3, 4, 2, 1]
+> [1, 2, 3, 4]
+
+- sometimes you want to reverse a list and you can use *.reverse* method:
+```py
+list1 = [1, 2, 3, 4]
+list1.reverse()
+print(list1)
+```
+> [4, 3, 2, 1]
+
+- and if you want to find the index of an item, you can use the *.index* Method:
+```Py
+list1 = ['Hello', 'name', 'slimshady']
+print(list1.index('slimshady'))
+print(list1.index('marshall'))
+```
+> 2
+> ValueError # if the item is not existent
+
+## Tuples
+```Py title="Tuples example"
+tuple1 = (67, 'Sin of pie', False)
+# the only thing about tuples is its ordered and cannot be charged. 
+print(tuple1[1])
+# you can also use negetive indexing for reaching from the back
+```
+> 'Sin of pie'
+
+#### the tuple() function 
+```Py
+string_name = 'John doe'
+print(tuple(string_name))
+```
+> ('J', 'o', 'h', 'n', ' ', 'd', 'o', 'e')
+
+#### Checking if something is in the tuple or nah
+```Py title=""in" keyword"
+tuple1 = (23, 47, 'Hello', False)
+'Hello' in tuple1 # True
+89 in tuple1 # False
+```
+
+#### Unpacking a tuple
+```Py 
+tuple1 = ('John Doe', 23, False)
+name, age, is_married = tuple1
+print(name)
+print(age)
+print(is_married)
+```
+> John Doe
+> 23
+> False
+
+- you can also get one thing from the list and set everything aside:
+```Py
+tuple1 = ('John Doe', 23, False)
+name, *rest = tuple1
+print(name)
+print(rest) # the output will be a list!
+```
+> John Doe
+> [23, False]
+
+#### slicing a tuple
+```Py
+tuple1 = (23, 46, 'IDK', True)
+print(tuple1[1:3])
+```
+> (46, 'IDK')
+
+#### Counting items in tuples
+```Py title=".count method"
+tuple1 = (1, 1, 2, 2, 2, 3)
+print(tuple1.count(1))
+print(tuple1.count(2))
+print(tuple1.count(3))
+print(tuple1.count(4))
+```
+> 2
+> 3
+> 1
+> 0 # if there is none, it will return 0
+
+#### Finding the index
+```Py title=".index method"
+tuple1 = (2, 4, 1, 3)
+print(tuple1.index(1))
+print(tuple1.index(8))
+```
+> 2
+> ValueError # if the item wasn't found
+
+#### Sorting tuples
+```Py title="sorted() function"
+tuple1 = (3, 2, 4, 1)
+tuple1_sorted = sorted(tuple1)
+print(tuple1)
+print(tuple1.sorted)
+# you cannot use .sort method on tuples cause they are immutable.
+```
+> (3, 2, 4, 1)
+> (1, 2, 3, 4)
+
+
+
+
+
+
+
