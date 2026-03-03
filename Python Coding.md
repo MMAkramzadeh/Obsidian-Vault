@@ -142,6 +142,12 @@ print(results2)
 ```
 > 2.0
 > 20.0
+
+#### Rounding Function
+```python title:"Rounding Function"
+num1 = 10.43
+
+```
 ___
 ## Lists
 ```Python
