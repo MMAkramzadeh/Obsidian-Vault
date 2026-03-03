@@ -142,12 +142,6 @@ print(results2)
 ```
 > 2.0
 > 20.0
-
-#### Rounding Function
-```python title:"Rounding Function"
-num1 = 10.43
-
-```
 ___
 ## Lists
 ```Python
@@ -367,7 +361,57 @@ print(tuple1.sorted)
 > (3, 2, 4, 1)
 > (1, 2, 3, 4)
 
+- you can use arguments such as reverse or key for other purposes:
+```py title="Arguments for sorted() function"
+tuple1 = ("Hello", "Hi", "Hey", "Name")
+print(sorted(tuple1, reverse=True))
+print(sorted(tuple1, key=len))
+```
+> ("Name", "Hey", "Hi", "Hello") # Reversed
+> ("Hi", "Hey", "Name", "Hello") # Sorted by length
 
+## For loops
+```py title="Looping through a List"
+list1 = [1, 2, 3, 4, 5]
+for item in list1:
+    print(item)
+```
+> 1
+> 2
+> 3
+> 4
+> 5
+
+- you can also loop through strings:
+```Py title="looping through strings"
+str1 = "My String"
+for char in str1
+    print(char)
+```
+> M
+> y
+>     
+>S
+>t
+>r
+>i
+>n
+>g
+
+- you can also nest some loops for further shit:
+```py title="Nesting for Loops"
+categories = ("Fruits", "Vegetables")
+edibles = ("apple", "banana", "orange")
+for category in categories:
+    for edible in edibles:
+        print(category, edible)
+```
+> Fruits apple
+> Fruits banana 
+> Fruits orange 
+> Vegetables apple
+> Vegetables banana 
+> Vegetables orange
 
 
 
