@@ -413,7 +413,33 @@ for category in categories:
 > Vegetables banana 
 > Vegetables orange
 
+## While loops
+```py title="While loop example"
+x = 0
+while x < 9:
+	print(x)
+	x++
+```
+> 0, 1, 2, 3, 4, 5, 6, 7, 8
 
+- you can use "continue" to skip a loop iteration or use "break" to exit a loop when a iteration comes.
+#### using else for loops:
+- you can use "else" after while or for loops and it will be executed if an operation of loop is finished and it is not terminatied by a "break" statement:
+```py
+words = ['sky', 'apple', 'rhythm', 'fly', 'orange']
 
+for word in words:
+    for letter in word:
+        if letter.lower() in 'aeiou':
+            print(f"'{word}' contains the vowel '{letter}'")
+            break
+    else:
+        print(f"'{word}' has no vowels")
+```
+>'sky' has no vowels
+>'apple' contains the vowel 'a'
+>'rhythm' has no vowels
+>'fly' has no vowels
+>'orange' contains the vowel 'o'
 
 
