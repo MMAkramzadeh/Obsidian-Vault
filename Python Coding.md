@@ -442,4 +442,34 @@ for word in words:
 >'fly' has no vowels
 >'orange' contains the vowel 'o'
 
+#### range() function 
+```py
+range(start, stop, step) #Generate a sequence of ints and the stop is not inclusive. If the start is not Declered it is assumed 0.
+
+# you can also turn it into a list by list() function:
+numbers = list(range(0, 10))
+print(numbers)
+```
+> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+## Enumerate() function 
+- it is a function that takes a list and returns a tuple that has 2 members; first it the index and second is the member from the first list:
+```Py
+languages = ["Rust", "C++", "Zig"]
+print(list(enumerate(languages)))
+```
+> [(0, "Rust"), (1, "C++"), (2, "Zig")]
+
+- we can also unpack the list with enumerate function:
+```Py
+Languages = ["Rust", "C++", "Zig"]
+
+for index, language in enumerate(Languages):
+    print(f"the index {index} is occupied by item {language}")
+```
+> The index 0 is occupied by item Rust
+> The index 1 is occupied by item C++
+> The index 2 is occupied by item Zig
+
+- you can also give it a start argument so it starts counting from that.
 
