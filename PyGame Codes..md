@@ -7,8 +7,8 @@ pygame.init()
 running = 1
 width = 1920
 height = 1200
-screen = pygame.display.set_mode(width, height)
-Clock = pygame.timer.Clock()
+screen = pygame.display.set_mode((width, height))
+clock = pygame.time.Clock()
 pygame.display.set_caption("Game Name")
 
 while running:
