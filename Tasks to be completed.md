@@ -1,5 +1,5 @@
 - [ ] Plan B & C
-- [ ] Aliena Cai email for Rihanna. 
+- [x] Aliena Cai email for Rihanna. 
 - [ ] Turin borse
 - [ ] Glovo sign-up
 
